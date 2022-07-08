@@ -22,7 +22,7 @@ from os import name as os_name
 
 # default width and height of the window.
 WIN_WIDTH = 550
-WIN_HEIGHT = 600
+WIN_HEIGHT = 200
 WIN_BG = "gray66"
 WIN_FONT = "ubuntu"
 
@@ -82,13 +82,27 @@ def main_window():
     # set an init value for random number.
     random_number.set('OUTPUT: [-]')
 
+    btn_properties = {
+        "bd": 0,
+        "bg": "gray80",
+        "highlightthickness": 0,
+        "activebackground": "gray85",
+        "font": (WIN_FONT, 24, "bold")
+    }
+    label_properties = {
+        "bd": 0,
+        "bg": WIN_BG,
+        "fg": "gray33",
+        "font": (WIN_FONT, 24, "bold")
+    }
+
     generate_random_number_btn = tkinter.Button(
-        root, text="Generate", bd=0, bg="gray80", highlightthickness=0, activebackground="gray85", font=(WIN_FONT, 24, "bold"), command=lambda: generate_rand_num(random_number))
-    # generate_random_number_btn.place(x=185, y=40)
+        root, text="Generate", command=lambda: generate_rand_num(random_number), **btn_properties)
+
     generate_random_number_btn.pack()
 
     output_label = tkinter.Label(
-        root, textvariable=random_number, bg=WIN_BG, fg="gray33", font=(WIN_FONT, 24, "bold"))
+        root, textvariable=random_number, **label_properties)
 
     # output_label.place(x=165, y=140)
     output_label.pack()
