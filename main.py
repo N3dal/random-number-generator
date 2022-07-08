@@ -32,9 +32,14 @@ def clear():
     if os_name == "posix":
         # for *nix machines.
         system("clear")
-    else:
-        # for windows machines.
+
+    elif os_name == "windows":
         system("cls")
+
+    else:
+        # for all other os in the world.
+        # system("your-command")
+        pass
 
 
 def start_app(root: tkinter.Tk):
