@@ -43,10 +43,15 @@ def clear():
 
 
 def start_app(root: tkinter.Tk):
+    """"""
     root.mainloop()
+
+    return None
 
 
 def generate_rand_num(string_var: tkinter.StringVar):
+    """generate random number and appending it to the StringVar object,
+    that we pass."""
 
     random_number = randint(0, 1000)
 
@@ -54,8 +59,11 @@ def generate_rand_num(string_var: tkinter.StringVar):
 
     string_var.set(temp_string)
 
+    return None
+
 
 def main_window():
+    """"""
 
     root = tkinter.Tk()
 
@@ -70,6 +78,7 @@ def main_window():
     # create special var to store the random,
     # number value in to it.
     random_number = tkinter.StringVar()
+
     # set an init value for random number.
     random_number.set('OUTPUT: [-]')
 
@@ -85,6 +94,8 @@ def main_window():
     output_label.pack()
 
     start_app(root)
+
+    return None
 
 
 def main():
