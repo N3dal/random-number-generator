@@ -25,6 +25,7 @@ WIN_WIDTH = 550
 WIN_HEIGHT = 200
 WIN_BG = "gray66"
 WIN_FONT = "ubuntu"
+MIN_NUM, MAX_NUM = 0, 1000
 
 
 def clear():
@@ -53,7 +54,7 @@ def generate_rand_num(string_var: tkinter.StringVar):
     """generate random number and appending it to the StringVar object,
     that we pass."""
 
-    random_number = randint(0, 1000)
+    random_number = randint(MIN_NUM, MAX_NUM+1)
 
     temp_string = f"OUTPUT: [{str(random_number).zfill(2)}]"
 
