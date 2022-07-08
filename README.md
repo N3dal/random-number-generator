@@ -1,4 +1,4 @@
-# ranodm number generator.
+# random number generator.
 simple random number generator using tkinter/python.
 
 ## screenshots:
