@@ -1,5 +1,6 @@
 # random number generator.
-simple random number generator using tkinter/python.
+
+small and simple window project to generate random numbers using **tkinter/python**.
 
 ## screenshots:
 
