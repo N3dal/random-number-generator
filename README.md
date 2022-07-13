@@ -2,6 +2,6 @@
 
 small and simple window project to generate random numbers using **tkinter/python**.
 
-## screenshots:
+## Demo:
 
 ![screenshot01](./src/screenshot01.gif)
